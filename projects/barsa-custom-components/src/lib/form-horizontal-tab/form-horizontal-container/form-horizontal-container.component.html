@@ -1,0 +1,20 @@
+<div class="flex" dir="rtl">
+  <div>
+    <fd-card>
+      <app-menu
+        [tabs]="tabs$ | async"
+        (tabChanged)="onTabChanged($event)"
+        [selectedTabId]="selectedTabId$ | async"
+      ></app-menu>
+    </fd-card>
+  </div>
+
+  <div class="flex-1">
+    <fd-card class="p-20">
+      <form-horizontal-tab-items
+        *ngIf="selectedTabItems$ | async as config"
+        [config]="config"
+      ></form-horizontal-tab-items>
+    </fd-card>
+  </div>
+</div>

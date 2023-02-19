@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "Glyphicons Halflings";
+  src: url("/assets/fonts/glyphicons-halflings-regular.eot");
+  src: url("/assets/fonts/glyphicons-halflings-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/glyphicons-halflings-regular.woff2") format("woff2"),
+    url("/assets/fonts/glyphicons-halflings-regular.woff") format("woff"),
+    url("/assets/fonts/glyphicons-halflings-regular.ttf") format("truetype"),
+    url("/assets/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular")
+      format("svg");
+}
+
+* {
+  font-family: BarsaFont, "Segoe Ui", Tahoma;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+a {
+  display: block;
+  text-decoration: none !important;
+  font-size: 13px;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+*:focus {
+  outline: none !important;
+  color: inherit;
+}
+
+dl {
+  margin: 0;
+  padding: 0;
+}
+
+section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.inner_wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/*div.container-fluid{padding:0 10px;}*/
+.section {
+  /* padding-bottom: 10px; */
+  clear: both;
+}
+.page-content,
+.form-page-content {
+  /* min-height: calc(100vh - 200px); */
+  background-color: var(--sapBackgroundColor);
+}
+
+.section:first-child {
+  margin: 0;
+}
+
+.header {
+  margin: 0 0 5px;
+  display: inline-block;
+  width: 100%;
+}
+
+.main_logo {
+  text-align: center;
+}
+
+section#mainpage {
+  position: relative;
+  background: none;
+  padding-bottom: 0;
+  margin: 0px 15px 0px !important;
+}
+
+section#general_sevices {
+  height: 570px;
+}
+
+.section_header {
+  text-align: center;
+  padding: 50px 0 30px;
+}
+
+img.qrcode_dl {
+  box-shadow: 0 3px 3px #ccc;
+  border: 1px solid #f1f1f1;
+  border-radius: 3px;
+  max-width: 160px;
+  width: 100%;
+}
+
+.qr_code_dl {
+  margin-top: 294px;
+  position: relative;
+  z-index: 60;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .gsb_download_inner {
+    min-height: 155px;
+  }
+}
+
+/*
+Responsive
+--------------------------------------------------
+*/
+
+@media only screen and (max-width: 1200px) {
+  .cabinet-member__name {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .cabinet-member__info {
+    padding: 10px;
+  }
+
+  .tabs-header {
+    position: relative;
+    min-height: initial !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .tabs-header a {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: auto !important;
+    display: block !important;
+    text-align: center !important;
+    line-height: 40px !important;
+  }
+}
+
+.fd-dynamic-page__footer .fd-bar--floating-footer {
+  box-shadow: none !important;
+  margin: auto 15px;
+  background-color: transparent !important;
+}

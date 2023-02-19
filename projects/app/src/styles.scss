@@ -1,0 +1,886 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~fundamental-styles/dist/icon.css';
+@import './assets/defaultFontFaces.css';
+@import './assets/IranFarsiNumMonoSpace.css';
+@import './assets/yekan.css';
+@import '~fundamental-styles/dist/theming/sap_fiori_3';
+
+
+@font-face {
+  font-family: "SAP-icons";
+  src: url("~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/SAP-icons.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BusinessSuiteInAppSymbols";
+  src: url("~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/BusinessSuiteInAppSymbols.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SAP-icons-TNT";
+  src: url("~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/SAP-icons-TNT.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@mixin ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@mixin control-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+@mixin control-readonly {
+  pointer-events: none;
+}
+/* You can add global styles to this file, and also import other style files */
+body[dir='rtl'] {
+  text-align: right;
+}
+body[dir='ltr'] {
+  text-align: left;
+}
+
+[dir='rtl'] {
+  --_text_align: right;
+}
+
+[dir='ltr'] {
+  --_text_align: left;
+}
+[dir='rtl'] {
+  --_text_align_reverse: right;
+}
+
+[dir='ltr'] {
+  --_text_align_reverse: left;
+}
+
+[dir='rtl'] {
+  --_flex_start: flex-end;
+}
+
+[dir='ltr'] {
+  --_flex_start: flex-start;
+}
+[dir='rtl'] {
+  --_flex_row_direction: row-reverse;
+}
+
+[dir='ltr'] {
+  --_flex_row_direction: row;
+}
+
+.block-item {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.deactive {
+  visibility: hidden;
+  overflow: hidden;
+  height: 0;
+  display: block;
+}
+.flex-column {
+  flex-direction: column;
+  display: flex;
+}
+.flex-align-center {
+  align-items: center;
+}
+
+.popover-discard {
+  width: 200px;
+}
+
+.popover-footer {
+  display: flex;
+  padding: 0.5rem;
+  width: 100%;
+  flex-direction: var(--_flex_row_direction);
+  ui5-button {
+      min-width: 80px;
+  }
+  :nth-child(n) {
+      margin: 0 3px;
+  }
+  :first-child {
+      margin-right: 0;
+  }
+}
+
+.hatchBackground {
+  background: linear-gradient(
+      45deg,
+      #8eaebd 1%,
+      #fff 1%,
+      #fff 49%,
+      #8eaebd 49%,
+      #8eaebd 51%,
+      #fff 51%,
+      #fff 99%,
+      #8eaebd 99%
+  );
+  background-size: 5px 5px;
+  background-position: 50px 50px;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+    --absolute-page-top: 0;
+}
+//tinymce iframe z-index
+.tox .tox-edit-area__iframe {
+    z-index: 1000 !important;
+}
+
+.productInfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.text-wrap {
+    word-wrap: break-word;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+body[dir='ltr'] .header-facet {
+    margin-right: 3rem;
+}
+
+body[dir='rtl'] .header-facet {
+    margin-left: 3rem;
+}
+
+.productInfo {
+    font-size: 0.875rem;
+}
+
+.facet-title {
+    align-self: baseline;
+    font-size: 1rem !important;
+    margin-bottom: 0.2rem !important;
+}
+
+.facet-value {
+    font-size: 1.5rem;
+}
+
+.facet-form-label {
+    align-self: center !important;
+}
+
+body {
+    overflow: hidden !important;
+}
+
+body[dir='ltr'] .mr8 {
+    margin-right: 8px;
+}
+
+body[dir='rtl'] .mr8 {
+    margin-left: 8px;
+}
+
+body[dir='ltr'] .toolbar-btn {
+    margin-left: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body[dir='rtl'] .toolbar-btn {
+    margin-right: 10px;
+}
+
+body[dir='ltr'] .toolbar-btn-icon {
+    margin-left: 3px;
+}
+
+[dir='rtl'] .toolbar-btn-icon {
+    margin-right: 3px;
+}
+
+.toolbar-vseperator {
+    border-left: 1px solid var(--sapButton_Lite_TextColor);
+    align-self: stretch;
+    opacity: 0.3;
+}
+
+.toolbar-container {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    justify-content: var(--_flex_start);
+}
+
+.overflow-btn {
+    display: block;
+}
+
+.toolbar-container.modal-toolbar {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+}
+
+.toolbar-container.modal-toolbar .toolbar-btn {
+    margin: 10px 0 0 0;
+}
+
+.toolbar-container.modal-toolbar .toolbar-vseperator {
+    border-top: 1px solid var(--sapButton_Lite_TextColor);
+    border-left: none;
+    border-right: none;
+    justify-self: stretch;
+}
+
+.sapBaseColor {
+    background-color: var(--sapBaseColor);
+}
+
+.sapBackgroundColor {
+    background-color: var(--sapBackgroundColor);
+}
+
+.cdk-overlay-container {
+    z-index: 10001 !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.page-wrapper {
+    position: relative;
+}
+
+.absolute-page {
+    position: absolute;
+    // top: var(--absolute-page-top);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+}
+
+.column-direction {
+    flex-direction: column;
+}
+
+.wrap-content {
+    flex-wrap: wrap-reverse;
+    align-items: stretch !important;
+}
+
+.container-field {
+    background-color: transparent;
+    align-items: center;
+    display: flex;
+}
+
+.row-direction {
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: flex-start;
+}
+
+.row-reverse-direction {
+    flex-direction: row-reverse;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.column-direction {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    height: 100%;
+}
+
+.column-reverse-direction {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    justify-content: center;
+    height: 100%;
+}
+
+.empty-space {
+    width: 100%;
+    display: block;
+}
+.unvisible {
+    visibility: hidden;
+}
+.color-transparent {
+    color: transparent !important;
+}
+.hide-form-item,
+.layout-not-rendered {
+    position: absolute !important;
+    visibility: hidden;
+    min-height: 0 !important;
+    height: auto;
+
+    label {
+        visibility: hidden;
+    }
+}
+
+.wrap-content > .container-field {
+    max-width: 100%; //i added !important because in login form forget and register buttons need to be 100%
+}
+
+.row-direction > .form-item-label-container > .bsu-label-control,
+.row-reverse-direction > .form-item-label-container > .bsu-label-control {
+    text-align: var(--_text_align);
+}
+
+.column-direction > .form-item-label-container > .bsu-label-control,
+.column-reverse-direction > .form-item-label-container > .bsu-label-control {
+    text-align: var(--_text_align_reverse);
+}
+
+.wrap-content .empty-space {
+    display: none;
+}
+.horizontal-label {
+    display: none;
+    line-height: var(--sapContent_LineHeight, 1.4);
+}
+
+bnrc-field-ui[xtype='Ui.Button'] {
+    min-width: auto;
+}
+bsu-ly-horizontal-layout > bsu-ly-layout-panel {
+    .fd-panel__content {
+        border-bottom: none;
+    }
+}
+bsu-ly-layout-panel:last-child {
+    .fd-panel__content {
+        border-bottom: none;
+    }
+}
+bnrc-field-ui[ischeckbox='false'],
+bnrc-field-ui[isbutton='false'] {
+    & > input {
+        // it make problem int grid selection mode.
+        min-width: 6rem;
+    }
+}
+fd-checkbox {
+    label {
+        min-height: 1.2rem;
+    }
+}
+@media (max-width: 600px) {
+    bnrc-field-ui {
+        min-width: 320px;
+    }
+    .container-field {
+        align-items: stretch !important;
+
+        .bsu-label-control {
+            width: 100% !important;
+        }
+    }
+    .row-direction {
+        flex-direction: column !important;
+        padding: 0 !important;
+        bsu-ly-label[rtl='true'] {
+            margin-right: 0;
+        }
+        bsu-ly-label[rtl='false'] {
+            margin-left: 0;
+        }
+        bnrc-field-ui[isCheckbox='true'] {
+            margin: 0;
+        }
+        .bsu-label-control {
+            // min-width: auto !important;
+            justify-content: flex-start !important;
+            align-self: baseline;
+        }
+    }
+    bsu-layout-control[ischeckbox='false'].row-direction {
+        flex-direction: row;
+    }
+    .row-reverse-direction {
+        flex-direction: column-reverse !important;
+        padding: 0 !important;
+        align-items: stretch;
+        bsu-ly-label[rtl='true'] {
+            margin-right: 0;
+        }
+        bsu-ly-label[rtl='false'] {
+            margin-left: 0;
+        }
+        .bsu-label-control {
+            // min-width: auto !important;
+            align-self: baseline;
+            justify-content: flex-start !important;
+        }
+    }
+    bsu-layout-control[ischeckbox='false'].row-reverse-direction {
+        flex-direction: row-reverse;
+    }
+    .empty-space {
+        display: none !important;
+    }
+    bsu-ly-horizontal-layout {
+        label[visible='false'].horizontal-label {
+            display: block;
+        }
+    }
+}
+
+.number-input {
+    flex-grow: 1;
+    direction: ltr;
+    width: 100%;
+}
+
+.p-b0 {
+    padding-bottom: 0 !important;
+}
+
+li .fd-list__form-item fd-checkbox input {
+    border: 0;
+}
+
+.color-box {
+    width: 320px !important;
+}
+
+.swatches-picker {
+    height: 292px !important;
+
+    .swatches-overflow {
+        height: 292px !important;
+    }
+}
+
+.saveing-form,
+.control-disabled {
+    @include control-disabled();
+}
+.control-readonly {
+    @include control-readonly();
+}
+.ellipsis {
+    width: auto;
+    @include ellipsis();
+}
+
+.fd-list.fd-combobox-custom-list.fd-combobox-input-menu-overflow.fd-list--dropdown {
+    max-width: 100%;
+}
+.bsu-dialog-fullscreen {
+    width: 100vw !important;
+    min-width: 100vw !important;
+    height: 100vh !important;
+    min-height: 100vh !important;
+}
+.linear-footer footer {
+    height: auto !important;
+}
+.ulv-form-multi-select {
+    bsu-search-panel {
+        padding: 1rem;
+    }
+    fd-layout-panel {
+        box-shadow: none !important;
+    }
+}
+.linear-list-selection {
+    fd-layout-panel {
+        box-shadow: none !important;
+        fd-layout-panel-body {
+            max-width: 100% !important;
+        }
+    }
+}
+
+// .fd-select__text-content {
+//     line-height: 1.2rem !important;
+// } // in inline edit it is large
+.bold-linkcolor {
+    color: var(--sapLinkColor) !important;
+    font-weight: 500 !important;
+}
+.fd-tile__footer {
+    height: 1.2rem !important;
+    min-height: 1.2rem !important;
+    max-height: 1.2rem !important;
+}
+
+.single-select {
+    min-width: 2rem;
+    max-width: 2rem;
+    width: 2rem;
+    text-align: center;
+}
+
+.page-wrapper > bsu-empty-page {
+    top: var(--absolute-page-top);
+}
+.fd-breadcrumb__link {
+    cursor: pointer;
+}
+.fd-list__title {
+    flex: 4 4 10% !important;
+}
+.ellapsis {
+    word-break: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+bsu-ui-form-panel[typedefname='کارتابل وارده'] fd-dynamic-page-content > bsu-ly-layout-container-of-root {
+    height: 100% !important;
+    border: 1px solid #cccccc3d;
+
+    bsu-ly-vertical-layout,
+    bsu-ly-horizontal-layout {
+        height: 100% !important;
+        //background-color: var(--sapBaseColor, #fff) !important;
+        fd-layout-panel {
+            box-shadow: none !important;
+            border-left: 1px solid #cccccc33;
+        }
+        bsu-ly-vertical-layout {
+            height: 100% !important;
+            background-color: var(--sapGroup_ContentBackground) !important;
+        }
+        bsu-layout-control[caption='جستجو گروه'] {
+            min-height: auto !important;
+            bnrc-field-ui {
+                padding: 0 1px !important;
+                .fd-input-group {
+                    margin: 0 !important;
+                }
+            }
+        }
+        bsu-layout-control[caption='گروههای کارتابل'] {
+            height: 100% !important;
+            tbody {
+                border: none !important;
+            }
+            bnrc-field-ui {
+                padding: 0 !important;
+            }
+            li a:active {
+                background-color: var(--sapBaseColor, #fff) !important;
+                // border-bottom: none !important;
+            }
+            li button[ng-reflect-glyph='navigation-left-arrow'] {
+                display: none;
+            }
+        }
+        bsu-layout-control[caption='ردیفهای کارتابل'] {
+            > bnrc-field-ui {
+                padding: 0 !important;
+            }
+            .fd-toolbar {
+                background-color: transparent !important;
+            }
+            bsu-ui-mo-info-sub-form-ui,
+            bnrc-form,
+            bsu-ui-form-panel,
+            bsu-ly-layout-container-of-root {
+                height: 100% !important;
+            }
+            bnrc-field-ui {
+                //    padding: 0 !important;
+            }
+        }
+    }
+}
+bsu-ui-form-panel[typedefname='گروه کارتابل'] {
+    bsu-ly-horizontal-layout {
+        height: 100%;
+    }
+}
+.col-view,
+.col-details {
+    padding: 0 !important;
+    text-align: center !important;
+}
+fd-facet {
+    .fd-object-status--large {
+        font-size: 1.1rem;
+    }
+}
+fd-quick-view-group {
+    fd-form-group {
+        .fd-title {
+            // font-size: 17px;
+        }
+
+        fd-quick-view-group-item-content,
+        .fd-quick-view__subtitle {
+            font-size: var(--sapFontSize);
+            color: var(--sapTextColor, #6a6d70);
+            span {
+                white-space: normal !important;
+                text-overflow: initial !important;
+                height: auto !important;
+            }
+        }
+        fd-quick-view-group-item-label .fd-form-label__wrapper {
+            padding-left: 0;
+            span.fd-form-label {
+                margin-bottom: 0 !important;
+                color: var(--sapContent_LabelColor);
+            }
+        }
+        .fd-form-item {
+            // padding-top: 0 !important;
+            height: calc(100% - 60px);
+        }
+    }
+}
+.showdetails {
+    .form-items {
+        display: flex;
+        justify-content: start;
+        padding: 0 1rem 1rem 1rem;
+        width: 100%;
+        column-gap: 2rem;
+        padding-top: 5px;
+        .fd-form-item {
+            bsu-column-renderer {
+                font-size: 1.275rem;
+            }
+        }
+    }
+    bnrc-field-ui {
+        bsu-ui-mo-info-combo-viewer,
+        bsu-ui-read-only-field {
+            span {
+                color: var(--sapTextColor) !important;
+                font-size: 1.15rem !important;
+            }
+        }
+    }
+}
+fd-input-group[ng-reflect-compact='true'] .fd-input-group {
+    margin-top: 0.1875rem !important;
+}
+bsu-ly-vertical-layout {
+    bsu-ly-layout-panel {
+        .fd-panel__content {
+            border-bottom: none !important;
+        }
+    }
+    bsu-ly-layout-panel:last-of-type {
+        .fd-panel__content {
+            border-bottom: solid 0.0625rem var(--fdPanel_Content_Border_Bottom_Color) !important;
+        }
+    }
+}
+.fd-table__cell {
+    font-weight: inherit !important;
+}
+
+.fd-tile--double {
+    max-width: 22.2rem !important;
+    min-width: 22.2rem !important;
+    width: 22.2rem !important;
+}
+
+*[imgLoaded='true'] {
+    bsu-mask {
+        display: none !important;
+    }
+}
+.file-validation {
+    display: flex;
+    column-gap: 5px;
+}
+bt-tiles-viewer-group:first-of-type {
+    margin-top: 1rem;
+}
+bt-tiles-viewer-group:last-of-type {
+    margin-bottom: 3rem;
+}
+
+
+
+body {
+  padding: 0;
+  margin: 0;
+}
+body[dir='ltr'] input {
+  direction: ltr;
+  text-align: left;
+}
+body[dir='rtl'] input {
+  direction: rtl;
+  text-align: right;
+}
+bnrc-root-portal {
+  position: relative;
+  display: block;
+}
+@media (max-width: 599px) {
+  // small
+  html {
+      font-size: 12px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  //medium
+  html {
+      font-size: 13px;
+  }
+}
+@media (min-width: 1024px), (max-width: 1439px) {
+  //large
+  html {
+      font-size: 14px;
+  }
+}
+@media (min-width: 1440px) {
+  //extra large
+  html {
+      font-size: 15px;
+  }
+}
+.month-years-wrapper {
+  display: flex;
+  flex-grow: 1;
+  button {
+      width: 100%;
+      max-width: 6rem;
+      ::ng-deep {
+          span {
+              font-size: 1rem !important;
+          }
+      }
+  }
+}
+.month-year-selection-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem 1rem;
+  row-gap: 0.25rem;
+}
+.gallery {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  column-gap: 1px;
+  background-color: var(--sapField_Background, #fff);
+
+  ::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 4px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      background: rgb(85, 84, 84);
+      border-radius: 4px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+      background: #2c2b2b;
+  }
+
+  %box {
+      overflow-y: scroll;
+      display: flex;
+      flex-direction: column;
+      row-gap: 3%;
+      align-items: center;
+      .pics {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          img {
+              border-radius: 5px;
+          }
+      }
+  }
+
+  .column {
+      @extend %box;
+      &.small-imgs-box {
+          flex: 10%;
+      }
+      &.big-imgs-box {
+          flex: 90%;
+      }
+  }
+
+  .selected {
+      background-color: #fff;
+      border: 3px solid #0294d8;
+      padding: 10px;
+  }
+
+  .fill-width img {
+      width: 100% !important;
+  }
+
+  .fill-all {
+      .pics {
+          height: 100%;
+      }
+      img {
+          width: 100% !important;
+          height: 100% !important;
+          object-fit: fill !important;
+      }
+  }
+
+  .fill-original img {
+      width: unset;
+      height: unset;
+  }
+
+  .zoom1 img {
+      zoom: 1;
+  }
+
+  .zoom1-5 img {
+      zoom: 1.5;
+  }
+
+  .zoom2 img {
+      zoom: 2;
+  }
+}

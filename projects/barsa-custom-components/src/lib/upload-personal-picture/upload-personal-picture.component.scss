@@ -1,0 +1,66 @@
+fd-card {
+  padding: 18px;
+  .upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    border: 2px dashed #0a6ed1;
+    border-radius: 5px;
+    min-height: 150px;
+    max-height: 150px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    i {
+      &::before {
+        color: #0a6ed1 !important;
+        font-size: 44px;
+      }
+    }
+  }
+  fd-action-sheet {
+    position: absolute;
+    z-index: 2;
+    top: 19px;
+    left: 19px;
+    border: 1px solid;
+    border-radius: 5px;
+    -webkit-box-shadow: var(--fdButton_Hover_Shadow);
+    background-color: var(--sapButton_Lite_Hover_Background);
+    border-color: var(--sapButton_Lite_Hover_BorderColor);
+    box-shadow: var(--fdButton_Hover_Shadow);
+    color: var(--sapButton_Lite_Hover_TextColor);
+    i {
+      &::before {
+        font-size: 18px;
+      }
+      &.red::before {
+        color: red;
+      }
+    }
+    .sheet-action {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 15px;
+      display: flex;
+      justify-content: end;
+    }
+  }
+
+  .progress {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #e4e4e4c7;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      flex: 0.5;
+    }
+  }
+}

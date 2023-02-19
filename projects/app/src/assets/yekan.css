@@ -1,0 +1,99 @@
+@font-face {
+  font-family: IRANYekan;
+  font-style: normal;
+  font-weight: 100;
+  src: url("/assets/Resources/fonts/yekan/YekanThin.eot");
+  src: url("/assets/Resources/fonts/yekan/YekanThin.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/Resources/fonts/yekan/YekanThin.woff") format("woff"),
+    url("/assets/Resources/fonts/yekan/YekanThin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANYekan;
+  src: url("/assets/Resources/fonts/yekan/YekanLight.eot");
+  src: url("/assets/Resources/fonts/yekan/YekanLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/Resources/fonts/yekan/YekanLight.woff2") format("woff2"),
+    url("/assets/Resources/fonts/yekan/YekanLight.woff") format("woff"),
+    url("/assets/Resources/fonts/yekan/YekanLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: IRANYekan;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/Resources/fonts/yekan/YekanRegular.eot");
+  src: url("/assets/Resources/fonts/yekan/YekanRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/Resources/fonts/yekan/YekanRegular.woff2") format("woff2"),
+    url("/assets/Resources/fonts/yekan/YekanRegular.woff") format("woff"),
+    url("/assets/Resources/fonts/yekan/YekanRegular.ttf") format("truetype");
+}
+@font-face {
+  font-family: IRANYekan;
+  font-style: normal;
+  font-weight: 500;
+  src: url("/assets/Resources/fonts/yekan/YekanMedium.eot");
+  src: url("/assets/Resources/fonts/yekan/YekanMedium.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/Resources/fonts/yekan/YekanMedium.woff") format("woff"),
+    url("/assets/Resources/fonts/yekan/YekanMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANYekan;
+  src: url("/assets/Resources/fonts/yekan/YekanBold.eot");
+  src: url("/assets/Resources/fonts/yekan/YekanBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/Resources/fonts/yekan/YekanBold.woff2") format("woff2"),
+    url("/assets/Resources/fonts/yekan/YekanBold.woff") format("woff"),
+    url("/assets/Resources/fonts/yekan/YekanBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: IRANYekan;
+  src: url("/assets/Resources/fonts/yekan/YekanExBold.eot");
+  src: url("/assets/Resources/fonts/yekan/YekanExBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/Resources/fonts/yekan/YekanExBold.woff") format("woff"),
+    url("/assets/Resources/fonts/yekan/YekanExBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: IRANYekan;
+  font-style: normal;
+  font-weight: 900;
+  src: url("/assets/Resources/fonts/yekan/YekanBlack.eot");
+  src: url("/assets/Resources/fonts/yekan/YekanBlack.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/Resources/fonts/yekan/YekanBlack.woff") format("woff"),
+    url("/assets/Resources/fonts/yekan/YekanBlack.ttf") format("truetype");
+}
+@font-face {
+  font-family: IRANYekan;
+  font-style: normal;
+  font-weight: 950;
+  src: url("/assets/Resources/fonts/yekan/YekanExBlack.eot");
+  src: url("/assets/Resources/fonts/yekan/YekanExBlack.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/Resources/fonts/yekan/YekanExBlack.woff") format("woff"),
+    url("/assets/Resources/fonts/yekan/YekanExBlack.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANYekanDigits;
+  src: url("/assets/Resources/fonts/yekan/YekanDigit.eot");
+  src: url("/assets/Resources/fonts/yekan/YekanDigit.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/Resources/fonts/yekan/YekanDigit.woff2") format("woff2"),
+    url("/assets/Resources/fonts/yekan/YekanDigit.woff") format("woff"),
+    url("/assets/Resources/fonts/yekan/YekanDigit.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}

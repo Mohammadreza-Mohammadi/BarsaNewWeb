@@ -1,0 +1,42 @@
+.main {
+  margin-right: 100px;
+  display: flex;
+  .item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+}
+
+.relative {
+  position: relative;
+  margin-right: 100px;
+}
+
+
+.times-columns {
+  display: flex;
+  margin-bottom: 16px;
+  padding: 16px;
+  div {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+.fd-time {
+  flex-direction: column;
+}
+
+.times-buttons {
+  display: flex;
+  .flex-1 {
+    flex: 1;
+    margin-left: 8px;
+  }
+}
+
+
+.fd-time.absolute {
+  padding: 0px!important;
+}

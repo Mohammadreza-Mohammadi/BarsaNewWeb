@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body[dir='ltr'] #contentHolderAndNav .fd-tabs__item:nth-child(2) {
+                display: none;
+            }
+            body[dir='ltr'] .content-feed bt-tiles-viewer-group[index='1'] {
+                display: none;
+            }
+        </style>
+        <meta charset="utf-8" />
+        <title></title>
+        <base href="/" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="manifest" href="manifest.webmanifest" />
+        <link rel="stylesheet" href="assets/theming-base/sap_fiori_3/css_variables.css" />
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="#1976d2" />
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
+
+        <script>
+            //StartConfig
+            IsPortal = 'true';
+            //EndConfig
+        </script>
+        <script data-ui5-config type="application/json">
+            {
+                "language": "fa",
+                "compactSize": false,
+                "rtl": true,
+                "theme": "sap_fiori_3",
+                "noConflict": {}
+            }
+        </script>
+        <style>
+            .mainOutter {
+                -ms-background-size: 100% 100%;
+                background-size: 100% 100%;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <bnrc-root-portal></bnrc-root-portal>
+    </body>
+</html>

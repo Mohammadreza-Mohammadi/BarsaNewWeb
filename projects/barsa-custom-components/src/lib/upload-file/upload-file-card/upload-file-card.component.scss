@@ -1,0 +1,162 @@
+.custom-header {
+  padding: 6px 12px !important;
+}
+.upload-container {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: baseline;
+  margin: 16px;
+  width: 25%;
+  button {
+    margin-top: 16px;
+  }
+  fd-card-footer {
+    display: flex;
+    justify-content: end;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+.w-6 {
+  width: 50%;
+  margin-top: 20px;
+}
+
+fd-card {
+  position: relative;
+  fd-action-sheet {
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    border: 1px solid;
+    border-radius: 5px;
+    -webkit-box-shadow: var(--fdButton_Hover_Shadow);
+    background-color: var(--sapButton_Lite_Hover_Background);
+    border-color: var(--sapButton_Lite_Hover_BorderColor);
+    box-shadow: var(--fdButton_Hover_Shadow);
+    color: var(--sapButton_Lite_Hover_TextColor);
+  }
+  img {
+    max-height: 150px;
+    height: 85px;
+    width: 100%;
+    object-fit: contain;
+    margin-top: 10px;
+  }
+  .file-name-container {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    p {
+      text-align: center;
+      font-weight: 400;
+      max-width: 130px;
+      overflow-wrap: break-word;
+      margin: 12px 0px;
+    }
+  }
+}
+
+.p-2 {
+  padding: 20px;
+}
+
+.icon {
+  display: flex;
+  justify-content: end;
+  padding: 0px 0px 10px 20px;
+}
+fd-card {
+  width: 180px;
+}
+fd-card-content {
+  padding: 15px 30px;
+}
+fd-card-footer {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: flex;
+  gap: 4px;
+  border-top: 0.0625rem solid var(--sapGroup_TitleBorderColor);
+  height: 40px;
+  justify-content: end;
+  padding: 5px;
+
+  i {
+    width: 30px;
+    ::ng-deep .fd-button {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.compact {
+  fd-card-footer {
+    border: none !important;
+  }
+  fd-card-content {
+    padding-bottom: 0px;
+  }
+}
+
+.sap-icon--add-photo {
+  font-size: 20px;
+}
+
+.file-name {
+  position: relative;
+  margin: 0 !important;
+  p.long-file-name {
+    cursor: pointer;
+    &:hover + div {
+      display: block;
+    }
+  }
+  div:hover {
+    display: block;
+  }
+  div {
+    z-index: 2;
+    display: none;
+    position: absolute;
+    margin: 0;
+    top: 34px;
+    right: 0px;
+    margin: 0;
+    background-color: white;
+    border: 2px solid #cfcfcf;
+    padding: 0px 8px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px -1px #ababab;
+  }
+}
+
+.file-uploaded {
+  fd-card-content {
+    padding: 0 !important;
+  }
+}
+
+.required {
+  font-weight: bold;
+  &:after {
+    content: " *";
+    color: red;
+  }
+}
+
+.cursor-defualt {
+  .custom-header,
+  .fd-card__content {
+    cursor: default;
+    &:hover {
+      background-color: unset;
+    }
+  }
+}

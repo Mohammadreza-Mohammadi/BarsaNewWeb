@@ -1,0 +1,46 @@
+.container {
+  padding: 16px;
+}
+
+.icons {
+  background: #f6f7f9;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+fd-card {
+  padding: 16px;
+  fd-icon {
+    cursor: pointer;
+    font-size: 18px;
+    margin: 4px;
+    font-weight: 400;
+    &.delete {
+      color: rgb(241 0 0);
+    }
+  }
+  .content {
+    padding: 0px 18px;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  span {
+    font-size: 14px;
+    color: gray;
+    display: block;
+    line-height: 2.2;
+  }
+
+  ul > :nth-child(n + 2) {
+    margin: 10px 0px;
+    padding: 10px 0px !important;
+    border-top: 1px solid #e5e5e5;
+  }
+}

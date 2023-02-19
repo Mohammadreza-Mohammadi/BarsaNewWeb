@@ -1,0 +1,59 @@
+﻿body
+{
+	font-family: Tahoma;
+	font-size: .7em;
+	color: #000;
+	direction: rtl;
+	background-color: #fff;
+	margin: 0px 0px 0px 0px;
+}
+
+.subject
+{
+	font-weight: 600;
+}
+
+
+span.master_title
+{
+	font-family: Tahoma;
+	font-size: 1em;
+	color: #0084ff;
+}
+
+span.detail_title
+{
+	font-family: Tahoma;
+	font-size: 1em;
+	color: #60809f;
+	/*color: #8888aa;*/
+	/*color: #0f14e0;*/
+}
+
+
+.mail_body
+{
+	font-family: Tahoma;
+	font-size: 1em;
+	color: black
+}
+
+.main_table
+{
+	/*position: absolute;
+	top: 0px;
+	right: 0px;*/
+    overflow: hidden;
+	width:100%;
+    background-color:White;
+}
+
+.attachLink
+{
+    cursor:hand;
+    text-decoration:underline
+}
+.attachContent
+{
+    cursor:hand;
+}

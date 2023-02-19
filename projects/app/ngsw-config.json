@@ -1,0 +1,61 @@
+{
+  "$schema": "../../node_modules/@angular/service-worker/config/schema.json",
+  "index": "/index.html",
+  "navigationUrls": [    
+    "!/**/openid/**",
+    "!/**/custom/**"    
+],
+"navigationRequestStrategy": "freshness",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "resources": {
+        "files": [
+          "/favicon.ico",
+          "/index.html",
+          "/assets/svg/offline-internet-icon.svg",
+          "/manifest.webmanifest",
+          "/*.css",
+          "/(main|scripts|polyfill|runtime)*.js",
+          "/*.woff",
+          "/*.woff2",
+          "/*.svg",
+          "/*.ttf",
+          "/*.eot"
+        ]
+      }
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/Resources/fonts/**",
+          "/assets/back.jpg",
+          "/assets/styles/**",
+          "/assets/icons/**",
+          "/assets/svg/**",          
+          "/*.(eot|svg|cur|jpg|jpeg|png|apng|webp|avif|gif|otf|ttf|woff|woff2)"
+        ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "api-performance",
+      "urls": [
+        "api/base/ServerStartupData",
+        "Localization/Translation/fa-IR.json",
+        "Localization/Translation/en-US.json"
+      ],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 3,
+        "maxAge": "0u",
+        "timeout": "0u"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<ng-container *ngFor="let item of items">
+  <div
+    *ngIf="type !== 'USER'; else isUser"
+    class="skeleton"
+    [style.width]="width ? width : defaultWidthTypes[type].width"
+    [style.height]="height ? height : defaultWidthTypes[type].height"
+    ngClass="{{ type }} {{ shine ? 'shine' : '' }}"
+  ></div>
+  <ng-template #isUser>
+    <div
+      class="user"
+      [style.width]="width ? width : defaultWidthTypes[type].width"
+      [style.height]="height ? height : defaultWidthTypes[type].height"
+    >
+      <div class="skeleton top" ngClass="{{ shine ? 'shine' : '' }}"></div>
+      <div class="skeleton bottom" ngClass=" {{ shine ? 'shine' : '' }}"></div>
+    </div>
+  </ng-template>
+</ng-container>

@@ -1,0 +1,116 @@
+<fd-time style="display: none"></fd-time>
+<div class="test">
+  <div class="test-child">
+    <fd-popover
+      class="relative"
+      [(isOpen)]="isOpen"
+      [triggers]="[]"
+      [closeOnEscapeKey]="true"
+      [focusAutoCapture]="false"
+      [focusTrapped]="true"
+    >
+      <fd-popover-control>
+        <fd-input-group
+          #inputGroupComponent
+          (addOnButtonClicked)="onAdOnButtonClicked()"
+          [button]="true"
+          [disabled]="false"
+          [isControl]="true"
+          [isExpanded]="isOpen"
+          glyph="calendar"
+        >
+          <input
+            type="text"
+            class="fd-input"
+            fd-input-group-input
+            [value]="yearMonthDay"
+            [readonly]="true"
+          />
+        </fd-input-group>
+      </fd-popover-control>
+
+      <fd-popover-body>
+        <ng-content></ng-content>
+        <div class="fd-time absolute">
+          <div class="times-columns">
+            <div>
+              <fd-time-column
+                *ngIf="showTimeColumns.years"
+                [active]="isActive"
+                [rows]="yearsViewItems"
+                [timeConfig]="getYearConfig"
+                (activeValueChange)="
+                  changeValueOfTimeColumn('YEAR', $event.value.value)
+                "
+                [activeValue]="activeYearViewItem"
+              ></fd-time-column>
+            </div>
+            <div>
+              <fd-time-column
+                *ngIf="showTimeColumns.months"
+                [active]="isActive"
+                [rows]="monthViewItems"
+                [timeConfig]="getMonthConfig"
+                (activeValueChange)="
+                  changeValueOfTimeColumn('MONTH', $event.value.value)
+                "
+                [activeValue]="activeMonthViewItem"
+              ></fd-time-column>
+            </div>
+            <div>
+              <fd-time-column
+                *ngIf="showTimeColumns.days"
+                [active]="isActive"
+                [rows]="daysViewItems"
+                [timeConfig]="getDayConfig"
+                (activeValueChange)="
+                  changeValueOfTimeColumn('DAY', $event.value.value)
+                "
+                [activeValue]="activeDayViewItem"
+              ></fd-time-column>
+            </div>
+            <div>
+              <fd-time-column
+                *ngIf="showTimeColumns.hours"
+                [active]="isActive"
+                [rows]="hoursViewItems"
+                [timeConfig]="getHourConfig"
+                (activeValueChange)="
+                  changeValueOfTimeColumn('HOUR', $event.value.value)
+                "
+                [activeValue]="activeHoursViewItem"
+              ></fd-time-column>
+            </div>
+            <div>
+              <fd-time-column
+                *ngIf="showTimeColumns.minutes"
+                [active]="isActive"
+                [rows]="minutesViewItems"
+                [timeConfig]="getMinuteConfig"
+                (activeValueChange)="
+                  changeValueOfTimeColumn('MINUTE', $event.value.value)
+                "
+                [activeValue]="activeMinutesViewItem"
+              ></fd-time-column>
+            </div>
+          </div>
+          <div fd-bar barDesign="footer">
+            <div fd-bar-right>
+              <fd-button-bar
+                fd-button
+                label="تایید"
+                fdType="emphasized"
+                (click)="savechangeTimes()"
+              ></fd-button-bar>
+              <fd-button-bar
+                fd-button
+                label="لغو"
+                (click)="cancel()"
+              ></fd-button-bar>
+            </div>
+          </div>
+        </div>
+      </fd-popover-body>
+    </fd-popover>
+  </div>
+</div>
