@@ -2,11 +2,6 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "paths": {
-      "BarsaCustomComponents": [
-        "dist/barsa-custom-components"
-      ]
-    },
     "baseUrl": "./",
     "outDir": "./dist",
     "forceConsistentCasingInFileNames": true,
@@ -26,7 +21,9 @@
     "importHelpers": true,
     "target": "es2020",
     "module": "esnext",
-    "lib": ["es2018", "dom"]
+    "lib": ["es2018", "dom"],
+    "paths": {
+    },
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

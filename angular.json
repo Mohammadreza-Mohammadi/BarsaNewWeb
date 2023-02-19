@@ -3,37 +3,6 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "BarsaCustomComponents": {
-      "projectType": "library",
-      "root": "projects/barsa-custom-components",
-      "sourceRoot": "projects/barsa-custom-components/src",
-      "prefix": "lib",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:ng-packagr",
-          "options": {
-            "project": "projects/barsa-custom-components/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/barsa-custom-components/tsconfig.lib.prod.json"
-            },
-            "development": {
-              "tsConfig": "projects/barsa-custom-components/tsconfig.lib.json"
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/barsa-custom-components/src/test.ts",
-            "tsConfig": "projects/barsa-custom-components/tsconfig.spec.json",
-            "karmaConfig": "projects/barsa-custom-components/karma.conf.js"
-          }
-        }
-      }
-    },
     "app": {
       "projectType": "application",
       "schematics": {
