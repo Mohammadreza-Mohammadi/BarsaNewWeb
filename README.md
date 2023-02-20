@@ -22,3 +22,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## more information
 goto wiki page https://github.com/Mohammadreza-Mohammadi/BarsaNewWeb/wiki
+
+## create issues
+you can add new issue in this repository.
