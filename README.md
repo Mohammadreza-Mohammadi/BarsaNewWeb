@@ -19,3 +19,6 @@ Run `npm run build` to build the project. The build artifacts will be stored in 
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## more information
+goto wiki page https://github.com/Mohammadreza-Mohammadi/BarsaNewWeb/wiki
