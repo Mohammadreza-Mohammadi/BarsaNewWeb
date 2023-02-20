@@ -15,8 +15,8 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
-          "options": {
+          "builder": "ngx-build-plus:browser",
+          "options": {            
             "outputPath": "dist/app",
             "index": "projects/app/src/index.html",
             "main": "projects/app/src/main.ts",
