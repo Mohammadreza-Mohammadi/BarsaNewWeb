@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "build": "ng build --project app --configuration production --extra-webpack-config webpack.partial.js",
+    "build": "ng build --project app --configuration production --extra-webpack-config webpack.partial.js && node bundle.mjs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "start": "ng serve --proxy-config proxy.conf.json -o  --configuration development"
+    "start": "ng serve --proxy-config proxy.conf.json -o  --configuration development",
+    "update-barsa": " npm i @barsanovinray/jscore@latest && npm i barsa-calendar@latest && npm i barsa-develop-components@latest && npm i barsa-echarts@latest && npm i barsa-echarts@latest && npm i barsa-kanban@latest && npm i barsa-novin-ray-core@latest && npm i barsa-sap-ui@latest && npm i barsa-tiles@latest"
   },
   "private": true,
   "dependencies": {
