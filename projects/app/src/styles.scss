@@ -30,115 +30,18 @@
   font-style: normal;
 }
 
-
 @mixin ellipsis {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 @mixin control-disabled {
-  pointer-events: none;
-  opacity: 0.5;
+    pointer-events: none;
+    opacity: 0.5;
 }
 @mixin control-readonly {
-  pointer-events: none;
+    pointer-events: none;
 }
-/* You can add global styles to this file, and also import other style files */
-body[dir='rtl'] {
-  text-align: right;
-}
-body[dir='ltr'] {
-  text-align: left;
-}
-
-[dir='rtl'] {
-  --_text_align: right;
-}
-
-[dir='ltr'] {
-  --_text_align: left;
-}
-[dir='rtl'] {
-  --_text_align_reverse: right;
-}
-
-[dir='ltr'] {
-  --_text_align_reverse: left;
-}
-
-[dir='rtl'] {
-  --_flex_start: flex-end;
-}
-
-[dir='ltr'] {
-  --_flex_start: flex-start;
-}
-[dir='rtl'] {
-  --_flex_row_direction: row-reverse;
-}
-
-[dir='ltr'] {
-  --_flex_row_direction: row;
-}
-
-.block-item {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.deactive {
-  visibility: hidden;
-  overflow: hidden;
-  height: 0;
-  display: block;
-}
-.flex-column {
-  flex-direction: column;
-  display: flex;
-}
-.flex-align-center {
-  align-items: center;
-}
-
-.popover-discard {
-  width: 200px;
-}
-
-.popover-footer {
-  display: flex;
-  padding: 0.5rem;
-  width: 100%;
-  flex-direction: var(--_flex_row_direction);
-  ui5-button {
-      min-width: 80px;
-  }
-  :nth-child(n) {
-      margin: 0 3px;
-  }
-  :first-child {
-      margin-right: 0;
-  }
-}
-
-.hatchBackground {
-  background: linear-gradient(
-      45deg,
-      #8eaebd 1%,
-      #fff 1%,
-      #fff 49%,
-      #8eaebd 49%,
-      #8eaebd 51%,
-      #fff 51%,
-      #fff 99%,
-      #8eaebd 99%
-  );
-  background-size: 5px 5px;
-  background-position: 50px 50px;
-  flex-grow: 1;
-  width: 100%;
-  height: 100%;
-}
-
 html {
     --absolute-page-top: 0;
 }
@@ -544,7 +447,7 @@ li .fd-list__form-item fd-checkbox input {
     text-align: center;
 }
 
-.page-wrapper > bsu-empty-page {
+.page-wrapper > bnrc-empty-page {
     top: var(--absolute-page-top);
 }
 .fd-breadcrumb__link {
@@ -729,158 +632,46 @@ bt-tiles-viewer-group:first-of-type {
 bt-tiles-viewer-group:last-of-type {
     margin-bottom: 3rem;
 }
-
-
-
-body {
-  padding: 0;
-  margin: 0;
+fd-combobox-mobile fd-dialog-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
-body[dir='ltr'] input {
-  direction: ltr;
-  text-align: left;
+bsu-ulv-groupby-settings.mobile fd-dialog-footer,
+bsu-ulv-column-settings.mobile fd-dialog-footer,
+bsu-ulv-sort-settings.mobile fd-dialog-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
-body[dir='rtl'] input {
-  direction: rtl;
-  text-align: right;
+.h_100 {
+    height: 100% !important;
 }
-bnrc-root-portal {
-  position: relative;
-  display: block;
+
+.showdetails-on {
+    td {
+        border-bottom: none !important;
+    }
 }
-@media (max-width: 599px) {
-  // small
-  html {
-      font-size: 12px;
-  }
+.moinfoulv.hasColumns {
+    padding: 5px !important;
+    li {
+        padding-bottom: 0.2rem;
+        border-bottom: 1px solid #ccc;
+    }
+    .title {
+        font-weight: bold;
+    }
+    .byline {
+        padding: 0;
+    }
 }
-@media (min-width: 600px) and (max-width: 1023px) {
-  //medium
-  html {
-      font-size: 13px;
-  }
-}
-@media (min-width: 1024px), (max-width: 1439px) {
-  //large
-  html {
-      font-size: 14px;
-  }
-}
-@media (min-width: 1440px) {
-  //extra large
-  html {
-      font-size: 15px;
-  }
-}
-.month-years-wrapper {
-  display: flex;
-  flex-grow: 1;
-  button {
-      width: 100%;
-      max-width: 6rem;
-      ::ng-deep {
-          span {
-              font-size: 1rem !important;
-          }
-      }
-  }
-}
-.month-year-selection-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0.5rem 1rem;
-  row-gap: 0.25rem;
-}
-.gallery {
-  display: flex;
-  width: 100%;
-  height: 400px;
-  column-gap: 1px;
-  background-color: var(--sapField_Background, #fff);
-
-  ::-webkit-scrollbar {
-      width: 7px;
-      height: 7px;
-  }
-
-  /* Track */
-  ::-webkit-scrollbar-track {
-      box-shadow: inset 0 0 5px grey;
-      border-radius: 4px;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-      background: rgb(85, 84, 84);
-      border-radius: 4px;
-  }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-      background: #2c2b2b;
-  }
-
-  %box {
-      overflow-y: scroll;
-      display: flex;
-      flex-direction: column;
-      row-gap: 3%;
-      align-items: center;
-      .pics {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          img {
-              border-radius: 5px;
-          }
-      }
-  }
-
-  .column {
-      @extend %box;
-      &.small-imgs-box {
-          flex: 10%;
-      }
-      &.big-imgs-box {
-          flex: 90%;
-      }
-  }
-
-  .selected {
-      background-color: #fff;
-      border: 3px solid #0294d8;
-      padding: 10px;
-  }
-
-  .fill-width img {
-      width: 100% !important;
-  }
-
-  .fill-all {
-      .pics {
-          height: 100%;
-      }
-      img {
-          width: 100% !important;
-          height: 100% !important;
-          object-fit: fill !important;
-      }
-  }
-
-  .fill-original img {
-      width: unset;
-      height: unset;
-  }
-
-  .zoom1 img {
-      zoom: 1;
-  }
-
-  .zoom1-5 img {
-      zoom: 1.5;
-  }
-
-  .zoom2 img {
-      zoom: 2;
-  }
+.moinfoulv.devider {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    right: 0;
+    height: 0;
+    padding-top: 1px;
+    background: var(--sapPageFooter_BorderColor);
 }
