@@ -30,7 +30,6 @@
   font-style: normal;
 }
 
-
 @mixin ellipsis {
     white-space: nowrap;
     overflow: hidden;
@@ -915,3 +914,173 @@ fd-dynamic-page.mobile {
         padding: 0;
     }
 }
+fd-info-label {
+    min-height: 1.2rem;
+}
+
+fd-text {
+    hyphens: auto;
+    &.bold {
+        p {
+            font-weight: 600;
+        }
+    }
+}
+.file-viewer-attachments {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+fd-dynamic-page.mobile {
+    .fd-dynamic-page__breadcrumb-container {
+        display: none;
+    }
+
+    fd-dynamic-page-header {
+        fd-dynamic-page-global-actions {
+            // width: 100%;
+        }
+        .fd-dynamic-page__title {
+            width: 100%;
+        }
+        .fd-dynamic-page__title {
+            font-size: 1.2rem;
+        }
+        .fd-dynamic-page__toolbar-container {
+            width: 100%;
+        }
+        fd-dynamic-page-global-actions {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-left: 0;
+            justify-content: end;
+        }
+        .fd-dynamic-page__toolbar {
+            justify-content: end;
+        }
+        .fd-toolbar__spacer {
+            display: none;
+        }
+        fd-toolbar {
+            width: 100%;
+        }
+    }
+}
+.help-more {
+    max-width: 320px;
+    overflow: auto;
+    text-wrap: wrap !important;
+}
+.barsa-tile {
+    display: block;
+    border-radius: var(--sapElement_BorderCornerRadius);
+    &.customColor {
+        .fd-tile {
+            background-color: transparent;
+        }
+    }
+}
+.root-custom-background {
+    .fd-shellbar {
+        background: transparent;
+        box-shadow: none;
+    }
+    bt-tiles-viewer-container {
+        fd-dynamic-page-content {
+            background-color: transparent;
+            fd-tab-list {
+                background-color: transparent !important;
+                transition: background-color 0.3s ease-out 0s;
+                fd-tab,
+                .fd-tabs {
+                    background-color: transparent !important;
+                    box-shadow: none !important;
+                    transition: background-color 0.3s ease-out 0s;
+                }
+            }
+            span.fd-tabs__tag {
+                color: white !important;
+            }
+            .fd-tabs__link.is-selected > span.fd-tabs__tag::after {
+                background-color: white !important;
+            }
+            // h5,
+            // h2,
+            .fd-layout-panel__title {
+                color: white !important;
+                //  border-bottom-color: white;
+            }
+            // fd-tab-list{
+            //     background-color: transparent !important;
+            //     .fd-tabs{
+            //         background-color: transparent;
+            //     }
+            //     fd-tabs{
+            //         background-color: transparent;
+            //     }
+            //     fd-tab{
+            //         fd-dynamic-page-content{
+            //             background-color: transparent;
+            //         }
+            //     }
+            // }
+        }
+    }
+}
+
+#bgOuterHolder {
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+#bgOuterHolder.sticky {
+    position: fixed;
+
+    top: 0;
+    z-index: 5;
+    background: rgb(247, 247, 247);
+}
+#bgInnerHolder {
+    height: 100%;
+    opacity: 1;
+    overflow: hidden;
+    top: 0px;
+    transform: scale(1);
+    width: 100%;
+}
+.backgroundImage {
+    height: 100%;
+    width: 100%;
+}
+.overlay {
+    background-attachment: fixed;
+    background-image: radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%),
+        radial-gradient(rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0.3) 166%);
+    background-position-y: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    transition: opacity 0.3s linear 0s;
+    width: 100%;
+}
+.picture {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin: -1px 0px 0px -1px;
+    object-fit: cover;
+    padding: 0px;
+    position: absolute;
+    width: 100%;
+}
+

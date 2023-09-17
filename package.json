@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "build": "ng build --project app --configuration production --extra-webpack-config webpack.partial.js",
+    "build": "ng build --project app --configuration production --extra-webpack-config webpack.partial.js && node bundle.mjs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "start": "ng serve --proxy-config proxy.conf.json -o  --configuration development",
