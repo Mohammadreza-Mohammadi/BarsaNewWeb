@@ -1,102 +1,102 @@
 {
   "/api": {
-    "target": "http://localhost:54491",
+    "target": "http://localhost:52957",
     "changeOrigin":true,
     "secure": false
   },
   "/IH.ashx": {
-    "target": "http://localhost:54491",
+    "target": "http://localhost:52957",
     "changeOrigin":true,
     "secure": false
   },
   "/signalr/hub": {
-    "target": "http://localhost:54491",
+    "target": "http://localhost:52957",
     "changeOrigin":true,
     "secure": false
   },
   "/signalr/*": {
-    "target": "http://localhost:54491",
+    "target": "http://localhost:52957",
     "secure": false,
     "changeOrigin":true,
     "ws": true
   },
   "/Localization": {
-    "target": "http://localhost:54491",
+    "target": "http://localhost:52957",
     "changeOrigin":true,
     "secure": false
   },
   "/Lib": {
-    "target": "http://localhost:54491",
+    "target": "http://localhost:52957",
     "changeOrigin":true,
     "secure": false
   },
   "/Customization": {
-    "target": "http://localhost:54491",
+    "target": "http://localhost:52957",
     "changeOrigin":true,
     "secure": false
   },
   "/Scripts": {
-    "target": "http://localhost:54491",
+    "target": "http://localhost:52957",
     "changeOrigin":true,
     "secure": false
   },
   "/Fields/File/Base/FileUploadFormMulti.ashx": {
-    "target": "http://localhost:54491",
+    "target": "http://localhost:52957",
     "changeOrigin":true,
     "secure": false
   },
   "/Fields/File/Base/FileDownload.aspx": {
-    "target": "http://localhost:54491",
+    "target": "http://localhost:52957",
     "changeOrigin":true,
     "secure": false
   },
   "/Lib/tinymce/plugins": {
-    "target": "http://localhost:54491",
+    "target": "http://localhost:52957",
     "changeOrigin":true,
     "secure": false
   },
   "/Lib/ext-3.4.1/resources": {
-    "target": "http://localhost:54491",
+    "target": "http://localhost:52957",
     "changeOrigin":true,
     "secure": false
   },
   "/wopi/": {
-    "target": "http://localhost:54491",
+    "target": "http://localhost:52957",
     "changeOrigin":true,
     "secure": false
   },
   "/Lib/gantt-master": {
-    "target": "http://localhost:54491",
+    "target": "http://localhost:52957",
     "changeOrigin":true,
     "secure": false
   },
   "/Report94/AspViewer": {
-    "target": "http://localhost:54491",
+    "target": "http://localhost:52957",
     "changeOrigin":true,
     "secure": false
   },
   "/DXR.axd": {
-    "target": "http://localhost:54491",
+    "target": "http://localhost:52957",
     "changeOrigin":true,
     "secure": false
   },
   "/DXB.axd": {
-    "target": "http://localhost:54491",
+    "target": "http://localhost:52957",
     "changeOrigin":true,
     "secure": false
   },
   "/WebResource.axd": {
-    "target": "http://localhost:54491",
+    "target": "http://localhost:52957",
     "changeOrigin":true,
     "secure": false
   },
   "/MyStyles.css": {
-    "target": "http://localhost:54491",
+    "target": "http://localhost:52957",
     "changeOrigin":true,
     "secure": false
   },
   "/GenericErrorPage.aspx": {
-    "target": "http://localhost:54491",
+    "target": "http://localhost:52957",
     "changeOrigin":true,
     "secure": false
   },

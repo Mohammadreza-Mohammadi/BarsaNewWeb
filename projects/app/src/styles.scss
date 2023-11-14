@@ -917,6 +917,31 @@ fd-dynamic-page.mobile {
         padding: 0;
     }
 }
-.fd-object-status__text{
+.fd-object-status__text {
     line-height: 1.2 !important;
+}
+.fd-button--menu .fd-button__text {
+    line-height: 1.1rem !important;
+}
+.list-empty-item,
+.placeholder-custom {
+    color: var(--sapField_PlaceholderTextColor) !important;
+    font-style: italic;
+}
+button.placeholder-custom {
+    span {
+        display: contents;
+    }
+}
+.menu-button-datepicker {
+    span {
+        direction: ltr;
+    }
+}
+fd-dialog-footer-button {
+    fd-button-bar {
+        button {
+            width: 100%;
+        }
+    }
 }
