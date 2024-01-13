@@ -1,33 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* You can add global styles to this file, and also import other style files */
 @import '~fundamental-styles/dist/icon.css';
 @import './assets/defaultFontFaces.css';
 @import './assets/IranFarsiNumMonoSpace.css';
 @import './assets/yekan.css';
 @import '~fundamental-styles/dist/theming/sap_fiori_3';
 
-
 @font-face {
-  font-family: "SAP-icons";
-  src: url("~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/SAP-icons.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'SAP-icons';
+    src: url('~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/SAP-icons.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "BusinessSuiteInAppSymbols";
-  src: url("~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/BusinessSuiteInAppSymbols.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'BusinessSuiteInAppSymbols';
+    src: url('~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/BusinessSuiteInAppSymbols.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "SAP-icons-TNT";
-  src: url("~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/SAP-icons-TNT.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'SAP-icons-TNT';
+    src: url('~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/SAP-icons-TNT.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @mixin ellipsis {
@@ -301,7 +301,7 @@ fd-checkbox {
 }
 @media (max-width: 600px) {
     bnrc-field-ui {
-        min-width: 320px;
+        // min-width: 320px; در حالت فرم های نمایشی از صفحه میزد بیرون مثلا product form viewer
     }
     .container-field {
         align-items: stretch !important;
@@ -350,7 +350,7 @@ fd-checkbox {
     bsu-layout-control[ischeckbox='false'].row-reverse-direction {
         flex-direction: row-reverse;
     }
-    .empty-space {
+    .empty-space.big {
         display: none !important;
     }
     bsu-ly-horizontal-layout {
@@ -406,6 +406,7 @@ li .fd-list__form-item fd-checkbox input {
     min-width: 100vw !important;
     height: 100vh !important;
     min-height: 100vh !important;
+    transform: none !important;
 }
 .linear-footer footer {
     height: auto !important;
@@ -599,7 +600,8 @@ bsu-ly-vertical-layout {
     }
     bsu-ly-layout-panel:last-of-type {
         .fd-panel__content {
-            border-bottom: solid 0.0625rem var(--fdPanel_Content_Border_Bottom_Color) !important;
+            //  border-bottom: solid 0.0625rem var(--fdPanel_Content_Border_Bottom_Color) !important;
+            //  در ساید کانتت خط اضافه میفتاد
         }
     }
 }
@@ -636,13 +638,6 @@ bt-tiles-viewer-group:last-of-type {
     margin-bottom: 3rem;
 }
 fd-combobox-mobile fd-dialog-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-bsu-ulv-groupby-settings.mobile fd-dialog-footer,
-bsu-ulv-column-settings.mobile fd-dialog-footer,
-bsu-ulv-sort-settings.mobile fd-dialog-footer {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -943,5 +938,28 @@ fd-dialog-footer-button {
         button {
             width: 100%;
         }
+    }
+}
+.grid-col {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.fd-toolbar__overflow {
+    align-items: start;
+}
+.panel-inside-layout {
+    .fd-panel__content {
+        padding: 0;
+    }
+}
+.noborder {
+    border: none !important;
+}
+.fill-width img {
+    width: 100% !important;
+}
+.popover-selection-day {
+    .fd-toolbar {
+        height: 2.8rem;
     }
 }
