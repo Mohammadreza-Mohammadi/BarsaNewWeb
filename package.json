@@ -52,7 +52,7 @@
     "moment-hijri": "^2.1.2",
     "moment-jalaali": "^0.9.2",
     "ng2-pdfjs-viewer": "^17.0.3",
-    "ngx-build-plus": "^17.0.0",
+    "ngx-build-plus": "^18.0.0",
     "ngx-color": "^7.2.0",
     "pako": "^2.0.4",
     "recordrtc": "^5.6.2",
@@ -64,7 +64,7 @@
   },
   "devDependencies": {
     "@angular-builders/custom-webpack": "^11.1.1",
-    "@angular-devkit/build-angular": "^17.3.11",
+    "@angular-devkit/build-angular": "^18.2.12",
     "@angular/cli": "^17.3.11",
     "@angular/compiler-cli": "^18.2.13",
     "@gfx/zopfli": "^1.0.15",
@@ -80,8 +80,7 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "ng-packagr": "^17.3.0",
-    "ngx-build-plus": "^14.0.0",
+    "ng-packagr": "^18.2.1",
     "typescript": "~5.4.5",
     "zip-a-folder": "^1.1.7"
   }
