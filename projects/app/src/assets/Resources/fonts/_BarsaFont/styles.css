@@ -1,13 +1,14 @@
+
 @font-face {
-    font-family: 'BarsaFont-Light';
-    src: url('BarsaFont-Light.eot') format('embedded-opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'BarsaFont-Light';
+  src: url('BarsaFont-Light.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'BarsaFont-Light';
-    src: url(data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAJkMAA8AAAAA5ZQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAACH8AAAAAgA
+  font-family: 'BarsaFont-Light';
+  src:  url(data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAJkMAA8AAAAA5ZQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAACH8AAAAAgA
 AAAIAAAAAUdERUYAAIf4AAAAZwAAAH4RtRFWR1BPUwAAiGAAAA1pAAAXzJhgiApHU1VCAACVzAAA
 Az4AAAWS0L3GPk9TLzIAAAHUAAAAVgAAAGCnllFLY21hcAAAB1AAAARXAAAGasWSBIxnYXNwAACH
 4AAAABAAAAAQABgAIWdseWYAAA8IAABxSwAApcx2sGmyaGVhZAAAAVgAAAA2AAAANhJynC9oaGVh
@@ -694,9 +695,9 @@ z5vN80fz/Nk8fzHP38zT652QvBzDrXO8kznSm0+B66S6z1NO+8dnda0z5drD/ML+GeusJ0L6Jila
 phgGMljdVmK10VmnGoX3tNWDinKjqiBFt/TWDdJw0mb18ZmHnY5j3kw1pwpp1P4prX2qnyJh6cyk
 LRlk04Xr6EEv+tFf7Ddpdyh/qSvHS9EUHtDt5+jW89ShC3mGZazkeV5iPRvZzFZe4TV2sZeDvKW/
 3RFOiOVTPudrvuUs39v9iqQ7Vf0e/FdeB8QzOy6e23oeYi6PJOT4OcvyBjaxhW28elW+P+YTPrOs
-n0mo0RYuMcJqdCR3ctdl4ZfbvwAA)
-            format('woff'),
-        url('BarsaFont-Light.ttf') format('truetype'), url('BarsaFont-Light.svg#BarsaFont-Light') format('svg');
-    font-weight: normal;
-    font-style: normal;
+n0mo0RYuMcJqdCR3ctdl4ZfbvwAA) format('woff'), url('BarsaFont-Light.ttf')  format('truetype'), url('BarsaFont-Light.svg#BarsaFont-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
+
+

@@ -16,7 +16,7 @@
       "architect": {
         "build": {
           "builder": "ngx-build-plus:browser",
-          "options": {            
+          "options": {
             "outputPath": "dist/app",
             "index": "projects/app/src/index.html",
             "main": "projects/app/src/main.ts",
@@ -28,6 +28,11 @@
               "projects/app/src/assets",
 
               {
+                "glob": "**/*",
+                "input": "node_modules/ng2-pdfjs-viewer/pdfjs",
+                "output": "/assets/pdfjs"
+              },
+              {
                 "glob": "**/css_variables.css",
                 "input": "./node_modules/@sap-theming/theming-base-content/content/Base/baseLib/",
                 "output": "./assets/theming-base/"
@@ -38,20 +43,20 @@
                 "output": "./assets/fundamental-styles-theming/"
               }
             ],
-            "styles": [
+            "styles": [                            
+              "./node_modules/leaflet/dist/leaflet.css",
               "projects/app/src/styles.scss",
-              "node_modules/fundamental-styles/dist/icon.css",
-              "./node_modules/@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/css_variables.css",
-              "./node_modules/fundamental-styles/dist/theming/sap_fiori_3.css",
+              "./node_modules/@fundamental-ngx/core/styles/fundamental-ngx-core.css",
+              "./node_modules/fundamental-styles/dist/fonts/sap_fonts.css",
               {
-                "input": "projects/app/src/theming/sap_fiori_3_fonts.css",
-                "inject": false,
-                "bundleName": "sap_fiori_3_fonts"
+                  "input": "./node_modules/fundamental-styles/dist/fonts/sap_fiori_3_fonts.css",
+                  "inject": false,
+                  "bundleName": "sap_fiori_3_fonts"
               },
               {
-                "input": "projects/app/src/theming/sap_horizon_fonts.css",
-                "inject": false,
-                "bundleName": "sap_horizon_fonts"
+                  "input": "./node_modules/fundamental-styles/dist/fonts/sap_horizon_fonts.css",
+                  "inject": false,
+                  "bundleName": "sap_horizon_fonts"
               }
             ],
             "scripts": [

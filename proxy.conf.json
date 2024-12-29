@@ -1,130 +1,175 @@
 {
   "/api": {
-    "target": "http://localhost:55875",
-    "changeOrigin":true,
-    "secure": false
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
   },
   "/IH.ashx": {
-    "target": "http://localhost:55875",
-    "changeOrigin":true,
-    "secure": false
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
   },
   "/signalr/hub": {
-    "target": "http://localhost:55875",
-    "changeOrigin":true,
-    "secure": false
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
   },
   "/signalr/*": {
-    "target": "http://localhost:55875",
-    "secure": false,
-    "changeOrigin":true,
-    "ws": true
+      "target": "http://localhost:63671",
+      "secure": false,
+      "changeOrigin": true,
+      "ws": true
   },
   "/Localization": {
-    "target": "http://localhost:55875",
-    "changeOrigin":true,
-    "secure": false
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
   },
   "/Lib": {
-    "target": "http://localhost:55875",
-    "changeOrigin":true,
-    "secure": false
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
   },
   "/Customization": {
-    "target": "http://localhost:55875",
-    "changeOrigin":true,
-    "secure": false
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
   },
   "/Scripts": {
-    "target": "http://localhost:55875",
-    "changeOrigin":true,
-    "secure": false
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
   },
   "/Fields/File/Base/FileUploadFormMulti.ashx": {
-    "target": "http://localhost:55875",
-    "changeOrigin":true,
-    "secure": false
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
   },
   "/Fields/File/Base/FileDownload.aspx": {
-    "target": "http://localhost:55875",
-    "changeOrigin":true,
-    "secure": false
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
   },
   "/Lib/tinymce/plugins": {
-    "target": "http://localhost:55875",
-    "changeOrigin":true,
-    "secure": false
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
+  },
+  "/Lib/Echarts": {
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
   },
   "/Lib/ext-3.4.1/resources": {
-    "target": "http://localhost:55875",
-    "changeOrigin":true,
-    "secure": false
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
   },
   "/wopi/": {
-    "target": "http://localhost:55875",
-    "changeOrigin":true,
-    "secure": false
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
   },
   "/Lib/gantt-master": {
-    "target": "http://localhost:55875",
-    "changeOrigin":true,
-    "secure": false
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
+  },
+  "/Report94/Bpmn": {
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
+  },
+  "/Report94/Gantt": {
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
   },
   "/Report94/AspViewer": {
-    "target": "http://localhost:55875",
-    "changeOrigin":true,
-    "secure": false
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
   },
   "/DXR.axd": {
-    "target": "http://localhost:55875",
-    "changeOrigin":true,
-    "secure": false
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
   },
   "/DXB.axd": {
-    "target": "http://localhost:55875",
-    "changeOrigin":true,
-    "secure": false
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
+  },
+  "/WordAddin": {
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
+  },
+  "/WebDav": {
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
   },
   "/WebResource.axd": {
-    "target": "http://localhost:55875",
-    "changeOrigin":true,
-    "secure": false
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
   },
   "/MyStyles.css": {
-    "target": "http://localhost:55875",
-    "changeOrigin":true,
-    "secure": false
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
   },
   "/GenericErrorPage.aspx": {
-    "target": "http://localhost:55875",
-    "changeOrigin":true,
-    "secure": false
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
+  },
+  "/_Temporary/": {
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
+  },
+  "/images/": {
+      "target": "http://localhost:63671",
+      "changeOrigin": true,
+      "secure": false
   },
   "/assets/Images": {
-    "target": "http://localhost:4200",
-    "changeOrigin":true,
-    "pathRewrite": {
-      "^/assets/Images/": "/assets/images/"
-    },
-    "secure": false
+      "target": "http://localhost:4300",
+      "changeOrigin": true,
+      "pathRewrite": {
+          "/assets/Images/": "/assets/images/"
+      },
+      "secure": false
+  },
+  "/assets/images": {
+      "target": "http://localhost:4300",
+      "changeOrigin": true,
+      "pathRewrite": {
+          "/assets/Images/": "/assets/images/"
+      },
+      "secure": false
+  },
+  "/assets/images/refresh16.png": {
+      "target": "http://localhost:4300",
+      "changeOrigin": true,
+      "pathRewrite": {
+          "/assets/Images/": "/assets/images/refresh16.png"
+      },
+      "secure": false
+  },
+  "/assets/images/loading0.gif": {
+      "target": "http://localhost:4300",
+      "changeOrigin": true,
+      "pathRewrite": {
+          "/assets/Images/": "/assets/images/loading0.gif"
+      },
+      "secure": false
+  },
+  "/assets/svg": {
+      "target": "http://localhost:4300",
+      "changeOrigin": true,
+      "secure": false
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

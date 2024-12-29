@@ -6,6 +6,7 @@
     "outDir": "./dist",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+    "esModuleInterop": true,
     "strictPropertyInitialization": false,
     "noImplicitReturns": true,
     "skipLibCheck": true,
@@ -13,13 +14,8 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
-    "downlevelIteration": true,
     "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
-    "typeRoots": [
-      "../node_modules/@types"
-    ],
     "importHelpers": true,
     "target": "ES2022",
     "module": "esnext",
@@ -27,11 +23,8 @@
       "es2018",
       "dom"
     ],
-    "paths": {},
-    "useDefineForClassFields": false
   },
   "angularCompilerOptions": {
-    "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true

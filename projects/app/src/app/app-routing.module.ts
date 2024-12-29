@@ -4,8 +4,8 @@ const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'top',
   scrollOffset: [0, 0],
   useHash: true,
-  relativeLinkResolution: 'legacy',
   onSameUrlNavigation: 'reload',
+  enableViewTransitions: true
 };
 const routes: Routes = [{ path: '', redirectTo: 'home', pathMatch: 'full' }];
 

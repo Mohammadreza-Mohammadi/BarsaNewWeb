@@ -1,8 +1,4 @@
 @media (max-width: 410px) {
-    html {
-        font-size: 12px;
-    }
-
     .tab_pan_detail {
         display: none;
     }
@@ -27,9 +23,6 @@
     section#mainpage {
         margin: 0 0 2px 0 !important;
         box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 0 0 #dadce0;
-    }
-    html {
-        font-size: 14px;
     }
     .modal-body .list_view li:last-child {
         border-bottom: 1px dotted #e2e2e2;

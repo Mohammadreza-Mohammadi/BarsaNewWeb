@@ -1,16 +1,16 @@
 ﻿@font-face {
-    font-family: 'BarsaFont';
-    font-style: normal;
-    font-weight: bold;
-    src: url('/Resources/fonts/Segoe/eot/seguisb.eot?#iefix') format('embedded-opentype'),
-        /* IE6-8 */ url('/Resources/fonts/Segoe/woff/seguisb.woff') format('woff'),
-        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('/Resources/fonts/Segoe/ttf/seguisb.ttf') format('truetype');
+	font-family: 'BarsaFont';
+	font-style: normal;
+	font-weight: bold;
+	src: url('/Resources/fonts/Segoe/eot/seguisb.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('/Resources/fonts/Segoe/woff/seguisb.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('/Resources/fonts/Segoe/ttf/seguisb.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'BarsaFont';
-    font-style: normal;
-    font-weight: normal;
-    src: url('/Resources/fonts/Segoe/eot/segoeui.eot?#iefix') format('embedded-opentype'),
-        /* IE6-8 */ url('/Resources/fonts/Segoe/woff/segoeui.woff') format('woff'),
-        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('/Resources/fonts/Segoe/ttf/segoeui.ttf') format('truetype');
+	font-family: 'BarsaFont';
+	font-style: normal;
+	font-weight: normal;
+	src: url('/Resources/fonts/Segoe/eot/segoeui.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('/Resources/fonts/Segoe/woff/segoeui.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('/Resources/fonts/Segoe/ttf/segoeui.ttf') format('truetype');
 }
