@@ -4,6 +4,10 @@ module.exports = {
     prefix: 'tw-',
     content: ['./projects/**/*.{html,ts}',
         "./node_modules/barsa-sap-ui/**/*.{mjs,ts}",        
+        "./node_modules/barsa-tiles/**/*.{mjs,ts}",        
+        "./node_modules/barsa-calendar/**/*.{mjs,ts}",        
+        "./node_modules/barsa-kanban/**/*.{mjs,ts}",        
+        "./node_modules/barsa-develop-components/**/*.{mjs,ts}",        
     ],
     theme: {
         extend: {          
