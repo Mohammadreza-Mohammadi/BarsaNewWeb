@@ -10,16 +10,7 @@
     "update-barsa": " npm i @barsanovinray/jscore@latest --force && npm i barsa-calendar@latest --force && npm i barsa-develop-components@latest --force && npm i barsa-echarts@latest --force && npm i barsa-kanban@latest --force && npm i barsa-novin-ray-core@latest --force && npm i barsa-sap-ui@latest --force && npm i barsa-tiles@latest --force"
   },
   "private": true,
-  "dependencies": {   
-    "barsa-calendar": "^2.1.13",
-    "barsa-develop-components": "^2.1.13",
-    "barsa-echarts": "^2.1.13",
-    "barsa-kanban": "^2.1.13",
-    "barsa-novin-ray-core": "^2.1.13",
-    "barsa-sap-ui": "^2.1.13",
-    "barsa-tiles": "^2.1.13",  
-
-
+  "dependencies": {
     "@angular/animations": "^18.0.3",
     "@angular/cdk": "^18.0.3",
     "@angular/common": "^18.0.3",
@@ -31,7 +22,7 @@
     "@angular/platform-browser-dynamic": "^18.0.3",
     "@angular/router": "^18.0.3",
     "@angular/service-worker": "^18.0.3",
-    "@barsanovinray/jscore": "^0.0.1009",
+    "@barsanovinray/jscore": "^0.0.1019",
     "@fundamental-ngx/btp": "^0.54.1",
     "@fundamental-ngx/cdk": "^0.54.1",
     "@fundamental-ngx/core": "^0.54.1",
@@ -44,6 +35,13 @@
     "@ui5/webcomponents": "1.0.0-rc.12",
     "@ui5/webcomponents-fiori": "1.0.0-rc.12",
     "angular-draggable-droppable": "^8.0.0",
+    "barsa-calendar": "^2.2.70",
+    "barsa-develop-components": "^2.2.70",
+    "barsa-echarts": "^2.2.70",
+    "barsa-kanban": "^2.2.70",
+    "barsa-novin-ray-core": "^2.2.70",
+    "barsa-sap-ui": "^2.2.70",
+    "barsa-tiles": "^2.2.70",
     "bootstrap": "^5.3.3",
     "echarts": "^5.1.2",
     "fundamental-styles": "^0.38.0",
