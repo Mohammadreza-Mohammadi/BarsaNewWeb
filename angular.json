@@ -29,7 +29,11 @@
             "assets": [
               "projects/app/src/favicon.ico",
               "projects/app/src/assets",
-
+              {
+                "glob": "**/*",
+                "input": "node_modules/ng2-pdfjs-viewer/pdfjs",
+                "output": "/assets/pdfjs"
+              },
               {
                 "glob": "**/css_variables.css",
                 "input": "./node_modules/@sap-theming/theming-base-content/content/Base/baseLib/",
