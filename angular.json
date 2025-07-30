@@ -23,15 +23,13 @@
             "polyfills": "projects/app/src/polyfills.ts",
             "tsConfig": "projects/app/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
+            "stylePreprocessorOptions": {
+              "includePaths": ["node_modules/barsa-styles/"]
+            },
             "assets": [
               "projects/app/src/favicon.ico",
               "projects/app/src/assets",
 
-              {
-                "glob": "**/*",
-                "input": "node_modules/ng2-pdfjs-viewer/pdfjs",
-                "output": "/assets/pdfjs"
-              },
               {
                 "glob": "**/css_variables.css",
                 "input": "./node_modules/@sap-theming/theming-base-content/content/Base/baseLib/",
@@ -39,25 +37,27 @@
               },
               {
                 "glob": "**/*",
+                "input": "./node_modules/@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/",
+                "output": "./assets/theming-base/baseTheme/fonts/"
+              },
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@sap-theming/theming-base-content/content/Base/baseLib/sap_horizon/fonts/",
+                "output": "./assets/theming-base/sap_horizon/fonts/"
+              },
+              {
+                "glob": "**/*",
                 "input": "./node_modules/fundamental-styles/dist/theming/",
                 "output": "./assets/fundamental-styles-theming/"
               }
             ],
-            "styles": [                            
+            "styles": [
+              "node_modules/fundamental-styles/dist/icon.css",
               "./node_modules/leaflet/dist/leaflet.css",
               "projects/app/src/styles.scss",
               "./node_modules/@fundamental-ngx/core/styles/fundamental-ngx-core.css",
-              "./node_modules/fundamental-styles/dist/fonts/sap_fonts.css",
-              {
-                  "input": "./node_modules/fundamental-styles/dist/fonts/sap_fiori_3_fonts.css",
-                  "inject": false,
-                  "bundleName": "sap_fiori_3_fonts"
-              },
-              {
-                  "input": "./node_modules/fundamental-styles/dist/fonts/sap_horizon_fonts.css",
-                  "inject": false,
-                  "bundleName": "sap_horizon_fonts"
-              }
+              "node_modules/@splidejs/splide/dist/css/splide-core.min.css",
+              "node_modules/@splidejs/splide/dist/css/splide.min.css"
             ],
             "scripts": [
               "./node_modules/@barsanovinray/jscore/core.js",
