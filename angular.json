@@ -29,6 +29,7 @@
             "assets": [
               "projects/app/src/favicon.ico",
               "projects/app/src/assets",
+              "projects/app/web.config",
               {
                 "glob": "**/*",
                 "input": "node_modules/ng2-pdfjs-viewer/pdfjs",
